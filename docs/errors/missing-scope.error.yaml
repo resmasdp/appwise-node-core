@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: The scope provided is missing or invalid
+  status:
+    type: number
+    default: 403

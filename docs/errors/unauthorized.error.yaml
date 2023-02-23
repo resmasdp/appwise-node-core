@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: The user is not authorized to perform this action
+  status:
+    type: number
+    default: 403

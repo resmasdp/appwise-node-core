@@ -1,0 +1,16 @@
+type: object
+required:
+  - client_id
+  - grant_type
+  - refresh_token
+properties:
+  client_id:
+    type: string
+    format: uuid
+    default: 5e3a3cba-d7ee-4182-a728-9a5f0528da3a
+  grant_type:
+    type: string
+    default: 'refresh'
+  refresh_token:
+    type: string
+    default: <refresh_token>

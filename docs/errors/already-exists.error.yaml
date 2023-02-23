@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: Entity already exists
+  status:
+    type: number
+    default: 409

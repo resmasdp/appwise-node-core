@@ -1,0 +1,12 @@
+get:
+  summary: Get the authenticated user's information
+  tags: [Authentication]
+  responses:
+    200:
+      description: User information
+      content:
+        application/json:
+          schema:
+            $ref: '../../users/transformers/user.transformer.yaml'
+  security:
+      - OAuth2: []

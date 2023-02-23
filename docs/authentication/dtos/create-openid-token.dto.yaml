@@ -1,0 +1,19 @@
+type: object
+required:
+  - client_id
+  - client_secret
+  - grant_type
+  - id_token
+properties:
+  client_id:
+    type: string
+    format: uuid
+  client_secret:
+    type: string
+    format: uuid
+  grant_type:
+    type: string
+    default: 'open_id'
+  id_token:
+    type: string
+    default: <id_token>

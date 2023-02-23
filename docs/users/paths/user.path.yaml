@@ -1,0 +1,46 @@
+get:
+  summary: Get authenticated user
+  tags: [Users]
+  parameters:
+    - $ref: '../parameters/user.path.yaml'
+  responses:
+    200:
+      description: User updated
+      content:
+        application/json:
+          schema:
+            $ref: '../transformers/user.transformer.yaml'
+  security:
+    - OAuth2: []
+
+post:
+  summary: Update authenticated user
+  tags: [Users]
+  parameters:
+    - $ref: '../parameters/user.path.yaml'
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '../dtos/update-user.dto.yaml'
+  responses:
+    200:
+      description: User updated
+      content:
+        application/json:
+          schema:
+            $ref: '../transformers/user.transformer.yaml'
+  security:
+    - OAuth2: []
+
+
+delete:
+  summary: Delete authenticated user
+  tags: [Users]
+  parameters:
+    - $ref: '../parameters/user.path.yaml'
+  responses:
+    200:
+      description: User deleted
+  security:
+    - OAuth2: []

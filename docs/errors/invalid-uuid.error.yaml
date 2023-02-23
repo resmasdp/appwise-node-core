@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: The uuid provided is not a valid uuid
+  status:
+    type: number
+    default: 400

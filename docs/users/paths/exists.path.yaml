@@ -1,0 +1,15 @@
+get:
+  summary: Checks if the user exists
+  tags: [Users]
+  parameters:
+    - $ref: '../parameters/email.query.yaml'
+  responses:
+    200:
+      description: Does the user exist
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean

@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: The token provided is not valid
+  status:
+    type: number
+    default: 401

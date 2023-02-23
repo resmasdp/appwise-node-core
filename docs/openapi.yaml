@@ -1,0 +1,40 @@
+openapi: 3.0.3
+info:
+  title: TYPESCRIPT BACKEND EXAMPLE API
+  description: ''
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/
+paths:
+  /api/oauth/token:
+    $ref: './authentication/paths/token.path.yaml'
+  /api/oauth/userinfo:
+    $ref: './authentication/paths/user-info.path.yaml'
+  /api/oauth/revoke:
+    $ref: './authentication/paths/revoke.path.yaml'
+
+  /api/v1/users/exists:
+    $ref: './users/paths/exists.path.yaml'
+  /api/v1/users:
+    $ref: './users/paths/register.path.yaml'
+  /api/v1/users/{user}:
+    $ref: './users/paths/user.path.yaml'
+  /api/v1/users/{user}/password:
+    $ref: './users/paths/password.path.yaml'
+
+components:
+  parameters:
+    $ref: './_parameters.yaml'
+  schemas:
+    $ref: './_schemas.yaml'
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        password:
+          tokenUrl: /api/oauth/token
+          scopes:
+            read: read
+            write: update
+            data: data
+            '*': All

@@ -1,0 +1,8 @@
+post:
+  summary: Revoke token for the authenticated user (acts as a log out)
+  tags: [Authentication]
+  responses:
+    200:
+      description: Revoke success
+  security:
+    - OAuth2: []

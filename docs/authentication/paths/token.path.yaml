@@ -1,0 +1,17 @@
+post:
+  summary: Generate access and refresh token
+  tags: [Authentication]
+  requestBody:
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          oneOf:
+            - $ref: '../dtos/create-token.dto.yaml'
+            - $ref: '../dtos/refresh-token.dto.yaml'
+  responses:
+    200:
+      description: Successfully generated access and refresh token
+      content:
+        application/json:
+          schema:
+            $ref: '../transformers/token.transformer.yaml'

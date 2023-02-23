@@ -1,0 +1,15 @@
+post:
+  summary: Create a new user
+  tags: [Users]
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '../dtos/create-user.dto.yaml'
+  responses:
+    200:
+      description: User created
+      content:
+        application/json:
+          schema:
+            $ref: '../transformers/user.transformer.yaml'

@@ -1,0 +1,6 @@
+in: query
+name: userEmail
+description: User email
+schema:
+  type: string
+required: true

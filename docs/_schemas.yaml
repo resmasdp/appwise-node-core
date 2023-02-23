@@ -1,0 +1,32 @@
+# AUTHENTICATION
+# dtos
+CreateOpenIDTokenDTO:
+  $ref: './authentication/dtos/create-openid-token.dto.yaml'
+CreateTokenDTO:
+  $ref: './authentication/dtos/create-token.dto.yaml'
+RefreshTokenDTO:
+  $ref: './authentication/dtos/refresh-token.dto.yaml'
+
+# transformers
+TokenTransformer:
+  $ref: './authentication/transformers/token.transformer.yaml'
+
+
+# USERS
+# enums
+UserRole:
+  $ref: './users/enums/role.enum.yaml'
+
+# dtos
+CreateUserDTO:
+  $ref: './users/dtos/create-user.dto.yaml'
+UpdateUserDTO:
+  $ref: './users/dtos/update-user.dto.yaml'
+UpdateUserPasswordDTO:
+  $ref: './users/dtos/update-user-password.dto.yaml'
+OpenIDUserDTO:
+  $ref: './users/dtos/openid-user.dto.yaml'
+
+# transformers
+UserTransformer:
+  $ref: './users/transformers/user.transformer.yaml'

@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: The parameters provided are invalid
+  status:
+    type: number
+    default: 400

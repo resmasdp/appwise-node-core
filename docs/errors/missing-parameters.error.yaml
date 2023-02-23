@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: Missing parameters for required field
+  status:
+    type: number
+    default: 400

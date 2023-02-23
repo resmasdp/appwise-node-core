@@ -1,0 +1,16 @@
+type: object
+required:
+  - email
+  - password
+properties:
+  email:
+    type: string
+    format: email
+    example: test@test.be
+  password:
+    type: string
+    minLength: 6
+  firstName:
+    type: string
+  lastName:
+    type: string

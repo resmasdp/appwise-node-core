@@ -1,0 +1,8 @@
+type: object
+properties:
+  description:
+    type: string
+    default: There was an error sending the email
+  status:
+    type: number
+    default: 500

@@ -1,0 +1,5 @@
+# USERS
+UserUuid:
+  $ref: './users/parameters/user.path.yaml'
+UserEmail:
+  $ref: './users/parameters/email.query.yaml'

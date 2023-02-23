@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "commonjs": true,
+    "mocha": true,
+    "jest": true
+  },
+  "extends": [
+    "appwise"
+  ],
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "@typescript-eslint/strict-boolean-expressions": "error",
+    "@typescript-eslint/consistent-indexed-object-style": [
+      "error",
+      "index-signature"
+    ]
+  },
+  "ignorePatterns": [
+    "jest.config.ts"
+  ]
+}
